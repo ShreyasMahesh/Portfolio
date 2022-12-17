@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <h1 class="mt-5">Get In Touch</h1>
+    <br /><br />
+
+    <h3>First name:</h3>
+    <input type="text" placeholder="John Doe"/>
+    <br /><br />
+
+    <h3>Email address:</h3>
+    <input type="text" placeholder="example@gmail.com"/>
+    <br /><br />
+
+    <h3>Write Your Message</h3>
+    <textarea></textarea>
+    <br />
+
+
+    <button class="btn btn-primary sendButton">Send</button>
+
+    <style>
+        * {
+            font-family: sans-serif;
+            margin-left: 200px;
+        }
+
+        
+
+        input {
+            margin-left: 200px;
+            width: 500px;
+            height: 50px;
+            border: 1px solid rgb(13,110,253);
+            border-radius: 10px;
+            color: rgb(13,110,253);
+        }
+
+        textarea {
+            margin-left: 200px;
+            /* resize: none; */
+            width: 600px;
+            height: 200px;
+            margin-bottom: 40px;
+            border: 1px solid rgb(13,110,253);
+            border-radius: 10px;
+            color: rgb(13,110,253);
+
+        }
+
+        .sendButton {
+            margin-left: 200px;
+            padding: 10px 10px;
+            font-size: 18px;
+            width: 80px;
+            font-weight: bold;
+            margin-bottom: 200px;
+        }
+    </style>
+</Layout>

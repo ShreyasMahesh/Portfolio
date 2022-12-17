@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout>
+    <div class="intro">
+        <h2>Hello I am</h2>
+        <h1 class="myName"></h1>
+        <h3>FRONTEND DEVELOPER</h3>
+        <br />
+        <a href="portfolio.html">See My Works</a>
+    </div>
+    <img src="https://ingeniouswebster.netlify.app/assets/imG/SERVICE.png" />
+
+    <style>
+        .intro {
+            font-family: sans-serif;
+            margin-left: 25%;
+            margin-bottom: 300px;
+            display: inline-block;
+        }
+
+        .intro h2 {
+            font-weight: 700;
+            margin-top: 100px;
+            font-size: 50px;
+        }
+
+        .intro h1 {
+            color: rgb(0, 138, 138);
+            font-size: 65px;
+            font-weight: 700;
+        }
+
+        .intro h3 {
+            font-size: 25px;
+        }
+
+        .intro a {
+            font-size: 25px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: rgb(17, 113, 133);
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        img {
+            position: absolute;
+            top: 70px;
+        }
+    </style>
+
+    <script>
+        let myName = document.querySelector(".myName");
+        let name = "Shreyas Mahesh";
+        let index = 0;
+
+        setInterval(function () {
+            if (index < name.length) {
+                myName.innerHTML += name[index];
+                index++;
+            }
+        }, 100);
+    </script>
+</Layout>

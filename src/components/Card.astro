@@ -1,0 +1,28 @@
+---
+export interface Props {
+	title?: string;
+	img?: string;
+	url?: string;
+}
+
+let { title, img, url } = Astro.props as Props;
+---
+
+<div class="card" style="width: 18rem;">
+	<img src={img} class="card-img-top" alt="..." />
+	<div class="card-body">
+		<h5 class="card-title">{title}</h5>
+		<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+	</div>
+	<div class="card-body text-center">
+		<a href={url} class="card-link" target="_blank">Visit Now</a>
+	</div>
+</div>
+
+<style>
+	.card {
+		margin: 40px;
+		display: inline-block;
+		margin-bottom: 200px;
+	}
+</style>
